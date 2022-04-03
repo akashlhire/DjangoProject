@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Fees | Shield IAS{% endblock title %}
+
+{% block content %}
+
+<div class="container my-3 px-10">
+<link rel="stylesheet" href="{% static 'firstapp/about.css' %}">
+  <div class="card text-center " >
+  <div class="card-header">
+    <h1 style="background: green; color: white; ">Academic Fee Structure</h1>
+  </div>
+  <div class="card-body">
+
+    <p class="card-text" style="background: #4f40a3; color: white; ">GENERAL STUDIES (PRELIM CUM MAIN) FOUNDATION CLASSROOM PROGRAM(New Batch).</p>
+    <p>This Program is for UPSC Civil Services Exam. Our General Studies Classroom program for Pre and Mains prepares aspirants holistically through a mix of classes, Rapid Practice Tests, Study Material, Daily News Headlines, Weekly Quiz, News Inshort, Monthly Current Affairs Magazine, Special edition books and All India Prelims Test Series and Mains Test Series. Our GS Mains & Prelims classroom course is designed for fresh aspirants of the Civil Services Exam. Our aim is to lay the right foundation and guide aspirants to understand the UPSC and IAS exam.</p>
+    <h1 class="card-title" >Rs. 98,500</h1>
+    <a href="{% url 'courses-page' %}" class="btn btn-primary">Know More</a>
+  </div>
+  <div class="card-footer text-muted">
+    Registration Fees: Rs. 500
+  </div>
+</div>
+
+
+</div>
+
+{% endblock content %}

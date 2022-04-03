@@ -1,0 +1,62 @@
+[Mon Aug 16 06:18:39.005785 2021] [mpm_event:notice] [pid 7718:tid 140538194783296] AH00489: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/2.7 configured -- resuming normal operations
+[Mon Aug 16 06:18:39.006001 2021] [core:notice] [pid 7718:tid 140538194783296] AH00094: Command line: '/usr/sbin/apache2'
+[Mon Aug 16 06:22:17.186220 2021] [mpm_event:notice] [pid 7718:tid 140538194783296] AH00493: SIGUSR1 received.  Doing graceful restart
+[Mon Aug 16 06:22:17.234704 2021] [mpm_event:notice] [pid 7718:tid 140538194783296] AH00489: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/2.7 configured -- resuming normal operations
+[Mon Aug 16 06:22:17.234737 2021] [core:notice] [pid 7718:tid 140538194783296] AH00094: Command line: '/usr/sbin/apache2'
+[Mon Aug 16 06:22:37.369851 2021] [mpm_event:notice] [pid 7718:tid 140538194783296] AH00491: caught SIGTERM, shutting down
+[Mon Aug 16 06:22:37.699866 2021] [mpm_event:notice] [pid 7855:tid 140575768546368] AH00489: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/2.7 configured -- resuming normal operations
+[Mon Aug 16 06:22:37.700008 2021] [core:notice] [pid 7855:tid 140575768546368] AH00094: Command line: '/usr/sbin/apache2'
+[Mon Aug 16 06:48:20.855633 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:53261] mod_wsgi (pid=7856): Failed to exec Python script file '/var/www/shieldias/shieldias/wsgi.py'.
+[Mon Aug 16 06:48:20.855701 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:53261] mod_wsgi (pid=7856): Exception occurred processing WSGI script '/var/www/shieldias/shieldias/wsgi.py'.
+[Mon Aug 16 06:48:20.855717 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:53261] Traceback (most recent call last):
+[Mon Aug 16 06:48:20.855734 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:53261]   File "/var/www/shieldias/shieldias/wsgi.py", line 12, in <module>
+[Mon Aug 16 06:48:20.855786 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:53261]     from django.core.wsgi import get_wsgi_application
+[Mon Aug 16 06:48:20.855802 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:53261] ImportError: No module named django.core.wsgi
+[Mon Aug 16 06:48:42.385325 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:64594] mod_wsgi (pid=7856): Failed to exec Python script file '/var/www/shieldias/shieldias/wsgi.py'.
+[Mon Aug 16 06:48:42.385363 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:64594] mod_wsgi (pid=7856): Exception occurred processing WSGI script '/var/www/shieldias/shieldias/wsgi.py'.
+[Mon Aug 16 06:48:42.385384 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:64594] Traceback (most recent call last):
+[Mon Aug 16 06:48:42.385407 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:64594]   File "/var/www/shieldias/shieldias/wsgi.py", line 12, in <module>
+[Mon Aug 16 06:48:42.385457 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:64594]     from django.core.wsgi import get_wsgi_application
+[Mon Aug 16 06:48:42.385478 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:64594] ImportError: No module named django.core.wsgi
+[Mon Aug 16 06:48:42.663294 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:64595] mod_wsgi (pid=7856): Failed to exec Python script file '/var/www/shieldias/shieldias/wsgi.py'.
+[Mon Aug 16 06:48:42.663320 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:64595] mod_wsgi (pid=7856): Exception occurred processing WSGI script '/var/www/shieldias/shieldias/wsgi.py'.
+[Mon Aug 16 06:48:42.663343 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:64595] Traceback (most recent call last):
+[Mon Aug 16 06:48:42.663369 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:64595]   File "/var/www/shieldias/shieldias/wsgi.py", line 12, in <module>
+[Mon Aug 16 06:48:42.663404 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:64595]     from django.core.wsgi import get_wsgi_application
+[Mon Aug 16 06:48:42.663459 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:64595] ImportError: No module named django.core.wsgi
+[Mon Aug 16 06:52:17.697814 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:57426] mod_wsgi (pid=7856): Failed to exec Python script file '/var/www/shieldias/shieldias/wsgi.py'.
+[Mon Aug 16 06:52:17.697852 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:57426] mod_wsgi (pid=7856): Exception occurred processing WSGI script '/var/www/shieldias/shieldias/wsgi.py'.
+[Mon Aug 16 06:52:17.697880 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:57426] Traceback (most recent call last):
+[Mon Aug 16 06:52:17.697914 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:57426]   File "/var/www/shieldias/shieldias/wsgi.py", line 12, in <module>
+[Mon Aug 16 06:52:17.697957 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:57426]     from django.core.wsgi import get_wsgi_application
+[Mon Aug 16 06:52:17.697985 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:57426] ImportError: No module named django.core.wsgi
+[Mon Aug 16 06:52:17.974423 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:57425] mod_wsgi (pid=7856): Failed to exec Python script file '/var/www/shieldias/shieldias/wsgi.py'.
+[Mon Aug 16 06:52:17.974471 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:57425] mod_wsgi (pid=7856): Exception occurred processing WSGI script '/var/www/shieldias/shieldias/wsgi.py'.
+[Mon Aug 16 06:52:17.974501 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:57425] Traceback (most recent call last):
+[Mon Aug 16 06:52:17.974535 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:57425]   File "/var/www/shieldias/shieldias/wsgi.py", line 12, in <module>
+[Mon Aug 16 06:52:17.974577 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:57425]     from django.core.wsgi import get_wsgi_application
+[Mon Aug 16 06:52:17.974606 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:57425] ImportError: No module named django.core.wsgi
+[Mon Aug 16 06:52:22.838094 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:57427] mod_wsgi (pid=7856): Failed to exec Python script file '/var/www/shieldias/shieldias/wsgi.py'.
+[Mon Aug 16 06:52:22.838142 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:57427] mod_wsgi (pid=7856): Exception occurred processing WSGI script '/var/www/shieldias/shieldias/wsgi.py'.
+[Mon Aug 16 06:52:22.838170 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:57427] Traceback (most recent call last):
+[Mon Aug 16 06:52:22.838202 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:57427]   File "/var/www/shieldias/shieldias/wsgi.py", line 12, in <module>
+[Mon Aug 16 06:52:22.838241 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:57427]     from django.core.wsgi import get_wsgi_application
+[Mon Aug 16 06:52:22.838264 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:57427] ImportError: No module named django.core.wsgi
+[Mon Aug 16 06:52:24.185876 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:57428] mod_wsgi (pid=7856): Failed to exec Python script file '/var/www/shieldias/shieldias/wsgi.py'.
+[Mon Aug 16 06:52:24.185906 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:57428] mod_wsgi (pid=7856): Exception occurred processing WSGI script '/var/www/shieldias/shieldias/wsgi.py'.
+[Mon Aug 16 06:52:24.185927 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:57428] Traceback (most recent call last):
+[Mon Aug 16 06:52:24.185956 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:57428]   File "/var/www/shieldias/shieldias/wsgi.py", line 12, in <module>
+[Mon Aug 16 06:52:24.186006 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:57428]     from django.core.wsgi import get_wsgi_application
+[Mon Aug 16 06:52:24.186030 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 103.219.165.155:57428] ImportError: No module named django.core.wsgi
+[Mon Aug 16 06:52:25.138261 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:57429] mod_wsgi (pid=7856): Failed to exec Python script file '/var/www/shieldias/shieldias/wsgi.py'.
+[Mon Aug 16 06:52:25.138289 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:57429] mod_wsgi (pid=7856): Exception occurred processing WSGI script '/var/www/shieldias/shieldias/wsgi.py'.
+[Mon Aug 16 06:52:25.138315 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:57429] Traceback (most recent call last):
+[Mon Aug 16 06:52:25.138341 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:57429]   File "/var/www/shieldias/shieldias/wsgi.py", line 12, in <module>
+[Mon Aug 16 06:52:25.138374 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:57429]     from django.core.wsgi import get_wsgi_application
+[Mon Aug 16 06:52:25.138394 2021] [wsgi:error] [pid 7856:tid 140575625266944] [remote 103.219.165.155:57429] ImportError: No module named django.core.wsgi
+[Mon Aug 16 06:52:55.018279 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 66.249.79.30:61432] mod_wsgi (pid=7856): Failed to exec Python script file '/var/www/shieldias/shieldias/wsgi.py'.
+[Mon Aug 16 06:52:55.018307 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 66.249.79.30:61432] mod_wsgi (pid=7856): Exception occurred processing WSGI script '/var/www/shieldias/shieldias/wsgi.py'.
+[Mon Aug 16 06:52:55.018329 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 66.249.79.30:61432] Traceback (most recent call last):
+[Mon Aug 16 06:52:55.018354 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 66.249.79.30:61432]   File "/var/www/shieldias/shieldias/wsgi.py", line 12, in <module>
+[Mon Aug 16 06:52:55.018388 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 66.249.79.30:61432]     from django.core.wsgi import get_wsgi_application
+[Mon Aug 16 06:52:55.018409 2021] [wsgi:error] [pid 7856:tid 140575675623168] [remote 66.249.79.30:61432] ImportError: No module named django.core.wsgi

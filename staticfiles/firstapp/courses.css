@@ -1,0 +1,191 @@
+.wrap-collabsible {
+    margin-bottom: 1.2rem 0;
+  }
+
+.test3 {
+  font-family: "Arial Black", sans-serif;
+  font-size: 4.5em;
+  letter-spacing: -1px;
+  background-color: #4f40a3;
+  color: white;
+  text-align: center;
+  }
+.test2 {
+  font-family: Georgia, sans-serif;
+  font-size: 2.5em;
+  letter-spacing: -1px;
+  background-color: #4f40a3;
+  color: white;
+  text-align: center;
+  }
+  input[type='checkbox'] {
+    display: none;
+  }
+  
+  .lbl-toggle {
+    display: block;
+  
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: left;
+  
+    padding: 1rem;
+  
+    color: #A77B0E;
+    background: #FAE042;
+  
+    cursor: pointer;
+  
+    border-radius: 7px;
+    transition: all 0.25s ease-out;
+  }
+  
+  .lbl-toggle:hover {
+    color: #7C5A0B;
+  }
+  
+  .lbl-toggle::before {
+    content: ' ';
+    display: inline-block;
+  
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+  
+    transition: transform .2s ease-out;
+  }
+  
+  .toggle:checked + .lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+  }
+  
+  .collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .35s ease-in-out;
+  }
+  
+  .toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 200vh;
+  }
+  
+  .toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .collapsible-content .content-inner {
+    background: rgba(250, 224, 66, .2);
+    border-bottom: 1px solid rgba(250, 224, 66, .45);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: .5rem 1rem;
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800|Poppins&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+  }
+  .cards{
+    max-width: 1000px;
+    /* height: 2000px; */
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    background: white;
+  }
+  .cards h2.header{
+    font-size: 40px;
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .services{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    transition: all .3s ease;
+    background: white;
+  }
+  .content .fab{
+    font-size: 70px;
+    margin: 16px 0;
+  }
+  .content > *{
+    flex: 1 1 100%;
+  }
+  .content:hover{
+    color: white;
+  }
+  .content:hover a{
+    border-color: white;
+    background: white;
+  }
+  .content-1:hover{
+    border-color: #1DA1F2;
+    background: #1DA1F2;
+  }
+  .content-1:hover a{
+    color: #1DA1F2;
+  }
+  .content-2:hover{
+    border-color: #E1306C;
+    background: #4f40a3;
+  }
+  .content-2:hover a{
+    color: #E1306C;
+  }
+  .content-3:hover{
+    border-color: #ff0000;
+    background: #ff0000;
+  }
+  .content-3:hover a{
+    color: #ff0000;
+  }
+  .content h4{
+    font-size: 30px;
+    margin: 16px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .content p{
+    font-size: 17px;
+    font-family: 'Poppins',sans-serif;
+  }
+  .content a{
+    margin: 22px 0;
+    background: black;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid black;
+    padding: 15px 0;
+    border-radius: 25px;
+    transition: .3s ease;
+  }
+  .content a:hover{
+    border-radius: 4px;
+  }
+  @media (max-width: 1100px) {
+    .services{
+      display: flex;
+      flex-direction: column;
+    }
+  }

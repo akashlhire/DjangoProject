@@ -1,0 +1,105 @@
+{% load static %}
+
+<footer id="footer" class="bg-primary text-white d-flex-column text-center">
+  <hr class="mt-0">
+  <!--Social buttons-->
+  <div class="text-center">
+    <h4>You can find us at</h4>
+    <ul class="list-unstyled list-inline">
+      <li class="list-inline-item">
+        <a href="https://m.facebook.com/101283501803942/" target="_blank" class="sbtn btn-large mx-1" title="Facebook">
+          <img src="{% static 'icons/fb.png' %}"/>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.instagram.com/shieldias" target="_blank" class="sbtn btn-large mx-1" title="Instagram">
+          <img src="{% static 'icons/insta.png' %}"/>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://twitter.com/shieldias" target="_blank" class="sbtn btn-large mx-1" title="Twitter">
+          <img src="{% static 'icons/tw.png' %}"/>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.youtube.com/channel/UCKR94fyTl1b-ykH8VIUtDzQ" target="_blank" class="sbtn btn-large mx-1" title="Youtube">
+          <img src="{% static 'icons/yt.png' %}"/>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://wa.link/c9x3fe" target="_blank" class="sbtn btn-large mx-1" title="Whatsapp">
+          <img src="{% static 'icons/wt.png' %}"/>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!--/.Social buttons-->
+  <hr class="mb-0">
+  <!--Footer Links-->
+  <div class="container text-left text-md-center">
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <h5>About Us</h5>
+            <p class="text-justify">Shield IAS is a fast emerging institution in the field of UPSC Civil Services
+                Examination and other related examinations. Our purpose is to cater to the
+                needs of varied set of students residing in cities, towns and villages by helping
+                them in reaching their right potential through a seamless window of easy
+                learning opportunities.
+                </p>
+        </div>
+        
+      
+      <hr class="clearfix w-100 d-md-none mb-0">
+      <!--Second column-->
+      <div class="col-md-3 mx-auto shfooter">
+        <h5 class="my-2 font-weight-bold d-none d-md-block">Quick Connect</h5>
+        <div class="d-md-none title" data-target="#Company" data-toggle="collapse">
+          <div class="mt-3 font-weight-bold">
+            <div class="float-right navbar-toggler">
+              <i class="fas fa-angle-down"></i>
+              <i class="fas fa-angle-up"></i>
+            </div>
+          </div>
+        </div>
+        
+        <ul class="list-unstyled collapse" id="Resources">
+          <li><a href="{% url 'contacts-page' %}">Click To Contact</a></li>
+          <li><p>Contact Us:<br><a href="https://wa.link/c9x3fe" target="_blank">+91-7303692587</a><br>+91-7037272363<br>shieldias@gmail.com</p></li>
+        </ul>
+      </div>
+      <!--/.Second column-->
+      <hr class="clearfix w-100 d-md-none mb-0">
+      <!--Third column-->
+      <div class="col-md-3 mx-auto shfooter">
+        <h5 class="my-2 font-weight-bold d-none d-md-block">Address</h5>
+        <div class="d-md-none title" data-target="#Resources" data-toggle="collapse">
+          <div class="mt-3 font-weight-bold">
+            <div class="float-right navbar-toggler">
+              <i class="fas fa-angle-down"></i>
+              <i class="fas fa-angle-up"></i>
+            </div>
+          </div>
+        </div>
+        <ul class="list-unstyled collapse" id="Company">
+          <li> <p class="text-justify"> Shield IAS  First Floor, 1/26, Vikas Marg, near Metro Station, Lalita Park, Laxmi Nagar, Delhi. </p><p>Metro Pillar No. 24</p></li>
+          <li><a href="https://g.page/shieldias?share" target="_blank" >Locate Us</a></li>
+        </ul>
+      </div>
+      <!--/.Third column-->
+      <hr class="clearfix w-100 d-md-none mb-0">
+
+
+      
+    </div>
+  </div>
+  <!--/.Footer Links-->
+  <hr class="mb-0">
+  <!--Copyright-->
+  <div class="py-3 text-center">
+    Copyright 2021 -
+    <script>
+      document.write(new Date().getFullYear())
+    </script> <a>Shield IAS</a> 
+  </div>
+  <!--/.Copyright-->
+</footer>

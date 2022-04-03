@@ -1,0 +1,280 @@
+{% extends 'base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'firstapp/index.css' %}">
+{% block title %}Home | Shield IAS{% endblock title %}
+
+{% block body %}
+<div class="container-fluid my-1 px-0">
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    {% comment %} <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> {% endcomment %}
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/new1.png' %}"   class="d-block w-100" alt="...">
+      {% comment %} <img src="https://source.unsplash.com/1200x400/?studying"   class="d-block w-100" alt="..."> {% endcomment %}
+      <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+        <p></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/st5.jpg' %}"  class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block" style =" background:black;border-radius:63px">
+        <h5></h5>
+        <p>It is skills combined with knowledge that creates success.</p>
+      </div>
+    </div>
+    {% comment %} <div class="carousel-item">
+      <img src="{% static 'images/Batch.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block"
+      style =" background:black;border-radius:63px">
+        <h5>Join Us Today for a Bright Future!</h5>
+        <p></p>
+      </div>
+    </div> {% endcomment %}
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+
+
+
+<link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/features/">
+
+
+{% endblock body %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'firstapp/index.css' %}">
+  <div class="container px-4 py-2" id="hanging-icons">
+    <div  class="test3"><h2>Why Shield IAS?</h2></div>
+    {% comment %} <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+        </div> {% endcomment %}
+        <div class="cards">
+        <div class="services">
+        <div class="content content-2">
+          <div class="my-2 text-center" style="color:white; background-color:green;"><h4>Organised approach</h4></div>
+          <p ><ul><li>Organised approach towards delivery of the entire course right from
+                its initiation and subsequent flow of the course till completion.</li>
+                <br><li> Need based support to students even after completion of coaching.</li>
+                <br><li> Commitment towards Knowledge Building, enhancement of required
+                Skills as per the demands of examination and infusing Job Fitness.</li></ul></p>
+          <a href="{% url 'contacts-page' %}" class="btn btn-primary">
+            Know More
+          </a>
+        </div>
+        </div>
+        {% comment %} </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"/></svg>
+        </div>
+        <div class="my-2 text-center" style="padding: 2px; border: 3px solid blue; background:"> {% endcomment %}
+        <div class="content content-2">
+          <div class="my-2 text-center" style="color:white; background-color:green;" ><h4>Process oriented</h4></div>
+          <p>
+            <ul>
+            <li>Delivery of course is fully process oriented with consistent and
+                rational approach towards all phases of examination –Prelims, Mains
+                and Personality Test.</li>
+            <br>
+            <li>We have Standardised Operating Procedures (SOPs) to maintain
+                consistency throughout.</li>
+            </ul>
+          
+          </p>
+          
+          <a href="{% url 'contacts-page' %}" class="btn btn-primary">
+            Know More
+          </a>
+        </div>
+      {% comment %} </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"/></svg>
+        </div>
+        <div class="my-2 text-center" style="padding: 2px; border: 3px solid blue; background:"> {% endcomment %}
+        <div class="content content-2">
+          <div class="my-2 text-center" style="color:white; background-color:green;"><h4>Participative feedback</h4></div>
+          <p>
+            <ul>
+                <li>Improvement happens through transparent feedbacks and the best
+                    source of our feedback are our students both past and present.</li>
+                <br><li>We follow participatory approach where students are readily
+                        encouraged to share their honest feedbacks.</li>
+                <br><li>Both the administration and faculty are open to suggestion and
+                        feedbacks.</li>
+            </ul>
+          
+          </p>
+          <br>
+          <a href="{% url 'contacts-page' %}" class="btn btn-primary">
+            Know More
+          </a>
+        </div>
+      {% comment %} </div>
+    </div>
+  </div>
+
+  <div class="b-example-divider"></div>
+
+    <div class="b-example-divider"></div>
+
+  <div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom"></h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+        </div>
+        <div class="my-2 text-center" style="padding: 2px; border: 3px solid blue; background:"> {% endcomment %}
+        <div class="content content-2">
+          <div class="my-2 text-center" style="color:white; background-color:green;"><h4>Objective</h4></div>
+          <p>
+            <ul>
+                <li>We believe in Research not Rumours. For this, we follow
+                    professionally objective approach to main best standards day in and
+                    day out.</li>
+                <br><li>Informed Decision Making and Standardised Operating
+                    Procedures (SOPs) based implementation.</li>
+                <br><li>Equality of treatment to all students, non-discriminatory approach
+                    and thus fair opportunities are provided to all students without any
+                    biases.</li>
+            </ul>
+            <br>
+            
+          </p>
+          <a href="{% url 'contacts-page' %}" class="btn btn-primary">
+            Know More
+          </a>
+        </div>
+      {% comment %} </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"/></svg>
+        </div>
+        <div class="my-2 text-center" style="padding: 2px; border: 3px solid blue; background:"> {% endcomment %}
+        <div class="content content-2">
+          <div class="my-2 text-center" style="color:white; background-color:green;"><h4>Knowledgeable And Skilled</h4></div>
+          <p>
+            <ul>
+                <li>It is skills combined with knowledge that creates success. Hence our commitment is towards quality teaching and regular improvement in teaching processes.</li>
+                <br><li>The Faculty in our institute are highly experienced, knowledgeable and skilled in the delivery of student oriented quality teaching</li>
+                <br><li>Our strength is regular capacity building of Teachers as per the changing needs of the examination.</li>
+            </ul>          
+          </p>
+          <a href="{% url 'contacts-page' %}" class="btn btn-primary">
+            Know More
+          </a>
+        </div>
+      {% comment %} </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"/></svg>
+        </div>
+        <div class="my-2 text-center" style="padding: 2px; border: 3px solid blue; background:"> {% endcomment %}
+        <div class="content content-2">
+          <div><h4 class="my-2 text-center" style="color:white; background-color:green;">Patient</h4></div>
+          <p>
+            <ul>
+                <li>Patience pays and we firmly believe in this. We follow this in our engagement with students throughout. </li>
+                <br><li>In this regard, patience is visible in the form of counselling and regular guidance and encouragement to students to ask questions.  </li>
+                <br><li>Patience in our approach helps the institute to remain committed for the success of our students and maintaining quality.</li>
+            </ul>
+          </p>
+          <br>
+          <br>
+          <br>
+
+          <a href="{% url 'contacts-page' %}" class="btn btn-primary">
+            Know More
+          </a>
+        </div>
+      {% comment %} </div>
+    </div>
+  </div>
+
+  <div class="b-example-divider"></div>
+
+    <div class="b-example-divider"></div>
+
+  <div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom"></h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+        </div>
+        <div class="my-2 text-center" style="padding: 2px; border: 3px solid blue; background:"> {% endcomment %}
+          <div class="content content-2">
+          <div><h4 class="my-2 text-center" style="color:white; background-color:green;">Flexibility</h4></div>
+          <p>
+            <ul>
+                <li>We follow flexibility approach so as to facilitate students seamless adjustment in their students. This is encouraged through availability of faculty for doubt sessions, availability of admin staff for solving student issues, flexible Test Modules etc.</li>
+                <br><li>In case of loss of classes due to illness or absence due to family urgency, we help students in making up for the lost classes. </li>
+            </ul>
+          </p>
+          <a href="{% url 'contacts-page' %}" class="btn btn-primary">
+            Know more
+          </a>
+        </div>
+      {% comment %} </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"/></svg>
+        </div>
+        <div class="my-2 text-center" style="padding: 2px; border: 3px solid blue; background:"> {% endcomment %}
+        <div class="content content-2">
+          <div><h4 class="my-2 text-center" style="color:white; background-color:green;">Realistic</h4></div>
+          <p>
+            <ul>
+                <li>Our approach is realistic and hence we believe in reinventing our approaches.</li>
+                <br><li>We follow a proper system of SWOT analysis to sustainably work and add to our strengths, to ward off any weakness and remain committed to our task of providing best to students.  </li>
+            </ul>
+          </p>
+          <br>
+          <br>
+          <a href="{% url 'contacts-page' %}" class="btn btn-primary">
+            Know More
+          </a>
+        </div>
+      {% comment %} </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"/></svg>
+        </div>
+        <div class="my-2 text-center" style="padding: 2px; border: 3px solid blue; background:"> {% endcomment %}
+        <div class="content content-2">
+          <div><h4 class="my-2 text-center" style="color:white; background-color:green;">Tough And Firm</h4></div>
+          <p>
+            <ul>
+                <li>A firm approach towards maintaining quality in delivery of courses. Firmness in maintaining best standards of teaching. </li>
+                <br><li>A no nonsense approach in maintaining basic discipline, dealing firmly with any form of nuisance so that committed students are not disturbed at all. </li>
+            </ul>
+          </p>
+          <br>
+          <a href="{% url 'contacts-page' %}" class="btn btn-primary" >
+            Know More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock content %}
