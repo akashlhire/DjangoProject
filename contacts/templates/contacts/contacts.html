@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Contact Us | Shield IAS{% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'contacts/contacts.css' %}">
+<div class="container my-3">
+ <div class="container-fluid px-0" align=right>
+   {% comment %} <img src="https://source.unsplash.com/1200x400/?call" class="d-block w-100 my-0" alt="..."> {% endcomment %}
+   <img class = "img-responsive" src="{% static 'images/contact.png' %}" class="d-block w-10 my-0" alt="Contact Us">
+ </div>
+
+<div class="container-fluid px-0" >
+ <head>
+    <style>
+    {
+        box-sizing: border-box;
+    }
+    /* Set additional styling options for the columns*/
+    .column {
+    float: left;
+    width: 50%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    </style>
+ </head>
+ <body style="background-color:#99a7b0;">
+    {% comment %} <div class="row"> {% endcomment %}
+
+        <div  style="background-color:#393942;">
+            <div class="container mb-0 py-4 ">
+                <h1 class="text-center" style="color:#14c935;"><b>Contact Us</b></h1>
+                <form method="post" action="/contacts">
+                {% csrf_token %}
+                    <div class="form-group">
+                        <label for="name" ><h4 style="color:#14c935;">Name:</h4></label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="email"><h4 style="color:#14c935;">Email Address:</h4></label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="phone"><h4 style="color:#14c935;">Phone Number:</h4></label>
+                        <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter Your Phone Number">
+                    </div>      
+                    <br>
+                    <div class="form-group">
+                        <label for="desc"><h4 style="color:#14c935;">Drop Your Queries Here!:</h4></label>
+                        <textarea class="form-control" id="desc" rows="3" name="desc"></textarea>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+        <div class="google-maps" style="background-color:#99a7b0;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d619.0718913283797!2d77.27464822343552!3d28.629778307600308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe020d18c289dc77d!2sShield%20IAS!5e0!3m2!1sen!2sin!4v1625886358889!5m2!1sen!2sin" width="335" height="250" style="border: 20px;;" allowfullscreen="" loading="lazy"></iframe>
+            <h2></h2>
+            <p></p>
+        </div>
+    {% comment %} </div> {% endcomment %}
+ </body>
+</div>
+</div>
+
+
+{% endblock content %}
